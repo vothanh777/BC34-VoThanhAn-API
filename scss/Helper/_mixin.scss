@@ -1,0 +1,23 @@
+@mixin displayAfter {
+    &::after{
+        display: block;
+        transform: scale(1.1);
+    }
+}
+
+@mixin text($color, $fs, $fw) {
+    font-size: $fs;
+    color: $color;
+    font-weight: $fw;
+}
+
+@mixin respond-to($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint){
+        $value: map-get($map: $breakpoints, $key: $breakpoint);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else{
+        @warn "breakpoint không tồn tại";
+    }
+}

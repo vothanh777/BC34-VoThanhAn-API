@@ -1,0 +1,24 @@
+// font size
+$fs-1: 13px;
+$fs-2: 1rem;
+$fs-3: 8px;
+
+//color
+$color-white: #ffffff;
+$color-1: #181818;
+$color-2: #191919;
+$color-3: #b61984;
+
+//padding
+$padding-1: 0 20px;
+
+$box-shadow-1: 0 0 0 3em #b61984 inset;
+
+$transition-1: all 0.3s ease;
+
+$breakpoints:(
+    'extra-large': 1200px,
+    'large': 992px,
+    'medium': 768px,
+    'small': 576px,
+)

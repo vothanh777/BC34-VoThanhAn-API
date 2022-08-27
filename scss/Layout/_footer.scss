@@ -1,0 +1,87 @@
+footer{
+    padding: 8em 0;
+    background-image: url(../../img/footer_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include text($color-white, 0.9em, 400);
+    
+    a{
+        text-decoration: none !important;
+        color: $color-white !important;
+        transition: all 200ms ease;
+        &:hover{
+            color: $color-white !important;
+            opacity: 0.8;
+        }
+    }
+
+    .col-footer{
+        padding: 0 40px;
+
+        .item-footer:first-child{
+            margin-bottom: 80px;
+            p{
+                margin-bottom: 0.8em;
+                i{
+                    padding-right: 0.5em;
+                }
+            }
+            p.social-footer{
+                transition: all 200ms ease;
+                a:hover{
+                    color: $color-1 !important;
+                }
+            }
+        }
+
+        .item-footer{
+            h3{
+                @include text($color-white, 1.55rem, 700);
+                margin-bottom: 1.5em;
+            }
+            li{
+                list-style: none;
+                line-height: 1;
+                padding: 0.8em 0 0;
+                div{
+                    border-bottom: 1px solid rgba(0,0,0,.1);
+                    padding-bottom: 0.8em;
+                    display: inline-block;
+                }
+            }
+        }
+        .item-footer:last-child{
+            .email-footer{
+                margin-bottom: 0.5em;
+                border: 1px solid rgba(255,255,255,.1);
+                transition: all 500ms ease;
+                border-radius: 50px;
+                outline: none;
+                font: inherit;
+                width: 100%;
+                background: transparent;
+                line-height: 1;
+                display: block;
+                padding: 1em;
+                color: inherit;
+                height: 3.2em;
+                direction: ltr;
+                text-align: center;
+            }
+            .btnButton{
+                width: 100%;
+                box-shadow: 0 0 0 3em #fff inset;
+                color: #181818;
+                outline: none;
+                background: transparent;
+                transition: all 300ms ease;
+                &:hover{
+                    box-shadow: 0 0 0 1px #fff inset;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,92 @@
+header{
+    background: transparent;
+    // background: $color-white;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    .navbar{
+        transition: $transition-1;
+        padding: 0;
+        a{
+            color: $color-1 !important;
+        }
+        .navbar-brand{
+            img{
+                width: 80px;
+            }
+            padding: 0;
+            @include respond-to('extra-large'){
+                margin: 0 auto;
+            }
+        }
+        .myNavbar{
+            font-size: $fs-1;
+            font-weight: 600;
+            .nav-item{
+                padding-right: 50px;
+                a.nav-link{
+                    padding: 0;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        display: none;
+                        width: $fs-3;
+                        height: $fs-3;
+                        background-color: $color-3;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 40%;
+                        bottom: -10px;
+                        z-index: 5;
+                        transition: $transition-1;
+                    }
+                    &:hover{
+                        color: $color-3 !important;
+                        @include displayAfter;
+                        @include respond-to('extra-large'){
+                            &::after{
+                                display: none;
+                            }
+                        }
+                    }
+                    
+
+                }
+                &.active{
+                    a.nav-link{
+                        @include displayAfter;
+                        @include respond-to('extra-large'){
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .navSocials{
+                a{
+                    margin-right: 8px;
+                    i{
+                        transition: $transition-1;
+                        &:hover{
+                            color: $color-3;
+                        }
+                    }
+                }
+            }
+            .navbar-nav{
+                @include respond-to('extra-large'){
+                    align-items: center;
+                }
+            }
+            .navContact{
+                @include respond-to('extra-large'){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    @include respond-to('extra-large'){
+        background: $color-white;
+    }
+}

@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .container {
+  max-width: 1200px;
+}
+
+header {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+header .navbar {
+  transition: all 0.3s ease;
+  padding: 0;
+}
+header .navbar a {
+  color: #181818 !important;
+}
+header .navbar .navbar-brand {
+  padding: 0;
+}
+header .navbar .navbar-brand img {
+  width: 80px;
+}
+@media screen and (max-width: 1200px) {
+  header .navbar .navbar-brand {
+    margin: 0 auto;
+  }
+}
+header .navbar .myNavbar {
+  font-size: 13px;
+  font-weight: 600;
+}
+header .navbar .myNavbar .nav-item {
+  padding-right: 50px;
+}
+header .navbar .myNavbar .nav-item a.nav-link {
+  padding: 0;
+  position: relative;
+}
+header .navbar .myNavbar .nav-item a.nav-link::after {
+  content: "";
+  display: none;
+  width: 8px;
+  height: 8px;
+  background-color: #b61984;
+  border-radius: 50%;
+  position: absolute;
+  left: 40%;
+  bottom: -10px;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+header .navbar .myNavbar .nav-item a.nav-link:hover {
+  color: #b61984 !important;
+}
+header .navbar .myNavbar .nav-item a.nav-link:hover::after {
+  display: block;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 1200px) {
+  header .navbar .myNavbar .nav-item a.nav-link:hover::after {
+    display: none;
+  }
+}
+header .navbar .myNavbar .nav-item.active a.nav-link::after {
+  display: block;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 1200px) {
+  header .navbar .myNavbar .nav-item.active a.nav-link {
+    display: none;
+  }
+}
+header .navbar .myNavbar .navSocials a {
+  margin-right: 8px;
+}
+header .navbar .myNavbar .navSocials a i {
+  transition: all 0.3s ease;
+}
+header .navbar .myNavbar .navSocials a i:hover {
+  color: #b61984;
+}
+@media screen and (max-width: 1200px) {
+  header .navbar .myNavbar .navbar-nav {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .navbar .myNavbar .navContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header {
+    background: #ffffff;
+  }
+}
+
+.aboutUs .wrapper {
+  padding-top: 80px;
+  background-image: url(../../img/yellow_top_wave_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.aboutUs .wrapper .innerWrapper {
+  background-image: url(../../img/Violet_top_left_wave.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.aboutUs .wrapper .innerWrapper .title {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.aboutUs .wrapper .innerWrapper .title h3 {
+  font-size: 1.1rem;
+  color: #b61984;
+  font-weight: 600;
+}
+.aboutUs .wrapper .innerWrapper .title h2 {
+  font-size: 3.8rem;
+  color: #191919;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 992px) {
+  .aboutUs .wrapper .innerWrapper .title h2 {
+    font-size: 3.15rem;
+    color: #191919;
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+}
+.aboutUs .wrapper .innerWrapper .img-Banner img {
+  display: block;
+  margin: 0;
+  line-height: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.team {
+  background-color: #dcd1f3;
+  background-image: url(../../img/Wave_White_bottom_right_shape_01.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  padding-top: 10px;
+}
+.team .teamCol {
+  padding: 0 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+.team .teamCol:hover .item {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+.team .teamCol .item {
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 300ms ease-in-out;
+}
+.team .teamCol .item img {
+  padding: 0 -2em;
+  display: inline-block;
+  overflow: hidden;
+  transform: scale3d(1, 1, 1);
+  transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+  max-width: 100%;
+  height: auto;
+  padding: 0 -2em;
+}
+.team .teamCol .item img:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+.team .teamCol .item .itemInfo {
+  margin: 30px 0 40px;
+  padding: 0;
+}
+.team .teamCol .item .itemInfo h4 {
+  font-size: 0.75rem;
+  color: #b61984;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+}
+.team .teamCol .item .itemInfo h3 {
+  font-size: 1.55rem;
+  color: #191919;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.team .teamCol .item .itemInfo p {
+  line-height: 1.2;
+}
+
+.contactUs {
+  background-image: url(../../img/accent_bottom_wave_01.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 60px 100px 0;
+}
+.contactUs .col-left, .contactUs .col-right {
+  padding: 0 20px;
+}
+.contactUs .col-left .item, .contactUs .col-right .item {
+  padding: 0 20px;
+}
+.contactUs .col-left img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+}
+.contactUs .col-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.contactUs .col-right .item {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contactUs .col-right .item h3 {
+  font-size: 2.5rem;
+  color: #191919;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.contactUs .col-right .item form .contact-row {
+  padding-bottom: 1em;
+}
+.contactUs .col-right .item form .contact-row.first-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contactUs .col-right .item form .contact-row.first-row .contact-email, .contactUs .col-right .item form .contact-row.first-row .contact-name {
+  max-width: 50%;
+  position: relative;
+  flex: 1 0 50%;
+}
+.contactUs .col-right .item form .contact-row.first-row .contact-name {
+  padding-right: 1em;
+}
+@media screen and (max-width: 768px) {
+  .contactUs .col-right .item form .contact-row.first-row .contact-email, .contactUs .col-right .item form .contact-row.first-row .contact-name {
+    max-width: 100%;
+    flex: 1 0 100%;
+  }
+  .contactUs .col-right .item form .contact-row.first-row .contact-name {
+    padding-right: 0;
+    padding-bottom: 1em;
+  }
+}
+.contactUs .col-right .item form .contact-row i {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.5);
+}
+.contactUs .col-right .item form .contact-row input, .contactUs .col-right .item form .contact-row textarea, .contactUs .col-right .item form .contact-row select {
+  transition: all 500ms ease;
+  border-radius: 50px;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font: inherit;
+  font-size: 0.8em;
+  opacity: 0.8;
+  line-height: 1;
+  display: block;
+  padding: 1em 1em 1em 3.5em !important;
+  height: 3.7em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.contactUs .col-right .item form .contact-row input:focus, .contactUs .col-right .item form .contact-row textarea:focus, .contactUs .col-right .item form .contact-row select:focus {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.contactUs .col-right .item form .contact-row .contact-nationality {
+  position: relative;
+}
+.contactUs .col-right .item form .contact-row .contact-nationality i {
+  position: absolute;
+  top: 0.9em;
+}
+.contactUs .col-right .item form .contact-row select {
+  line-height: 3.2em;
+  height: 3.2em;
+  overflow: hidden;
+  cursor: pointer;
+  color: inherit;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.contactUs .col-right .item form .contact-row .contact-message {
+  position: relative;
+}
+.contactUs .col-right .item form .contact-row textarea {
+  height: 90px;
+  line-height: 1.5;
+  border-radius: 20px;
+}
+.contactUs .col-right .item form .contact-button {
+  max-width: 150px;
+  padding: 2em 0;
+}
+.contactUs .col-right .item form .contact-button input, .contactUs .col-right .item form .contact-button .contact-row select, .contactUs .col-right .item form .contact-row .contact-button select, .contactUs .col-right .item form .contact-button .contact-row textarea, .contactUs .col-right .item form .contact-row .contact-button textarea {
+  height: 4em;
+  outline: none;
+  width: 100%;
+  display: block;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.contactUs .col-right .item form .contact-button input:hover, .contactUs .col-right .item form .contact-button .contact-row select:hover, .contactUs .col-right .item form .contact-row .contact-button select:hover, .contactUs .col-right .item form .contact-button .contact-row textarea:hover, .contactUs .col-right .item form .contact-row .contact-button textarea:hover {
+  color: #b61984 !important;
+}
+
+footer {
+  padding: 8em 0;
+  background-image: url(../../img/footer_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0.9em;
+  color: #ffffff;
+  font-weight: 400;
+}
+footer a {
+  text-decoration: none !important;
+  color: #ffffff !important;
+  transition: all 200ms ease;
+}
+footer a:hover {
+  color: #ffffff !important;
+  opacity: 0.8;
+}
+footer .col-footer {
+  padding: 0 40px;
+}
+footer .col-footer .item-footer:first-child {
+  margin-bottom: 80px;
+}
+footer .col-footer .item-footer:first-child p {
+  margin-bottom: 0.8em;
+}
+footer .col-footer .item-footer:first-child p i {
+  padding-right: 0.5em;
+}
+footer .col-footer .item-footer:first-child p.social-footer {
+  transition: all 200ms ease;
+}
+footer .col-footer .item-footer:first-child p.social-footer a:hover {
+  color: #181818 !important;
+}
+footer .col-footer .item-footer h3 {
+  font-size: 1.55rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+footer .col-footer .item-footer li {
+  list-style: none;
+  line-height: 1;
+  padding: 0.8em 0 0;
+}
+footer .col-footer .item-footer li div {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.8em;
+  display: inline-block;
+}
+footer .col-footer .item-footer:last-child .email-footer {
+  margin-bottom: 0.5em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 500ms ease;
+  border-radius: 50px;
+  outline: none;
+  font: inherit;
+  width: 100%;
+  background: transparent;
+  line-height: 1;
+  display: block;
+  padding: 1em;
+  color: inherit;
+  height: 3.2em;
+  direction: ltr;
+  text-align: center;
+}
+footer .col-footer .item-footer:last-child .btnButton {
+  width: 100%;
+  box-shadow: 0 0 0 3em #fff inset;
+  color: #181818;
+  outline: none;
+  background: transparent;
+  transition: all 300ms ease;
+}
+footer .col-footer .item-footer:last-child .btnButton:hover {
+  box-shadow: 0 0 0 1px #fff inset;
+  color: #fff;
+}
+
+.btnButton {
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 1px solid #b61984;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: inline-block;
+  color: #ffffff;
+}
+.btnButton .btnContent {
+  text-decoration: none;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+.btnButton:hover {
+  background-color: #ffffff;
+  box-shadow: none;
+}
+.btnButton:hover a.btnContent {
+  color: #b61984 !important;
+}/*# sourceMappingURL=style.css.map */

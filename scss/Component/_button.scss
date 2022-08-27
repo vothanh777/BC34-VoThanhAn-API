@@ -1,0 +1,26 @@
+.btnButton{
+    font-size: 1rem - 0.1;
+    font-weight: 500;
+    box-shadow: $box-shadow-1;
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 1px solid $color-3;
+    overflow: hidden;
+    transition: $transition-1;
+    display: inline-block;
+    color: $color-white;
+    
+    .btnContent{
+        text-decoration: none;
+        color: $color-white !important;
+        transition: $transition-1;
+    }
+    &:hover{
+        background-color: $color-white;
+        // border: 1px solid $color-3;
+        box-shadow: none;
+        a.btnContent{
+            color: $color-3 !important;
+        }
+    }
+}

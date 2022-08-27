@@ -1,0 +1,141 @@
+.contactUs{
+    background-image: url(../../img/accent_bottom_wave_01.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 60px 100px 0;
+    .col-left, .col-right{
+        padding: $padding-1;
+        .item{
+            padding: $padding-1;
+        }
+    }
+    .col-left{
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 2em;
+        }
+    }
+    .col-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 50px;
+        .item{
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+            padding-top: 40px;
+            padding-bottom: 40px;
+            h3{
+                @include text($color-2, 2.5rem, 700);
+                margin-bottom: 50px;
+            }
+            form{
+                .contact-row{
+                    &.first-row{
+                        display: flex;
+                        flex-wrap: wrap;
+                        .contact-email{
+                            max-width: 50%;
+                            position: relative;
+                            flex: 1 0 50%;
+                        }
+                        .contact-name{
+                            @extend .contact-email;
+                            padding-right: 1em;
+                        }
+                        @include respond-to('medium'){
+                            .contact-email, .contact-name{
+                                max-width: 100%;
+                                flex: 1 0 100%;
+                            }
+                            .contact-name{
+                                padding-right: 0;
+                                padding-bottom: 1em;
+                            }
+                        }
+                    }
+                    
+                    padding-bottom: 1em;
+                    
+                    i{
+                        position: absolute;
+                        top: 1em;
+                        left: 1em;
+                        line-height: 1;
+                        color: rgba(0,0,0,0.5);;
+                    }
+
+                    input{
+                        transition: all 500ms ease;
+                        border-radius: 50px;
+                        outline: none;
+                        background: transparent;
+                        width: 100%;
+                        font: inherit;
+                        font-size: 0.8em;
+                        opacity: 0.8;
+                        line-height: 1;
+                        display: block;
+                        padding: 1em 1em 1em 3.5em !important;
+                        height: 3.7em;
+                        border: 1px solid rgba(0,0,0,.1);
+                        &:focus{
+                            box-shadow: 0 0 4px 0 rgb(0 0 0 / 10%);
+                            border: 1px solid rgba(0,0,0,.3);
+                        }
+                    }
+
+                    .contact-nationality{
+                        position: relative;
+                        i{
+                            position: absolute;
+                            top: 0.9em;
+                        }
+                    }
+                    select{
+                        @extend input;
+                        line-height: 3.2em;
+                        height: 3.2em;
+                        overflow: hidden;
+                        cursor: pointer;
+                        color: inherit;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: 100%;
+                    }
+                    .contact-message{
+                        position: relative;
+                    }
+                    textarea{
+                        @extend input;
+                        height: 90px;
+                        line-height: 1.5;
+                        border-radius: 20px;
+                    }
+                }
+                .contact-button{
+                    max-width: 150px;
+                    padding: 2em 0;
+
+                    input{
+                        height: 4em;
+                        outline: none;
+                        width: 100%;
+                        display: block;
+                        font-size: 0.8em;
+                        letter-spacing: 1px;
+                        font-weight: 600;
+                        &:hover{
+                            color: $color-3 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

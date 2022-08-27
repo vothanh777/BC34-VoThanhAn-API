@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Our team - Wavy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- title Icon -->
+    <link rel="icon" type="image/x-icon" href="./img/crest.png" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/crest.png" alt="logo" class="image-fluid" />
+          </a>
+          <button
+            id="btnToggle"
+            class="navbar-toggler d-xl-none"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="myNavbar collapse navbar-collapse justify-content-end"
+            id="collapsibleNavId"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/admin.html">Admin-Management Page</a>
+              </li>
+            </ul>
+            <div class="navContact d-xl-flex">
+              <div class="btnButton mr-3">
+                <a href="#" class="btnContent">
+                  <i class="fa fa-phone"></i>
+                  <span>(+1) 555 234-8765</span>
+                </a>
+              </div>
+              <div class="navSocials d-flex align-items-center">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="aboutUs">
+      <div class="wrapper">
+        <div class="innerWrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 title">
+                <div>
+                  <h3>ABOUT US</h3>
+                  <h2>The language teaching experts</h2>
+                </div>
+              </div>
+              <div class="col-lg-6 img-Banner">
+                <img src="./img/hero_team.png" alt="hero team" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <div id="loading" class="loader" style="display: none"></div>
+        <div class="row" id="teamContent">
+      </div>
+    </section>
+
+    <section class="contactUs">
+      <div class="container px-5">
+        <div class="row">
+          <div class="col-lg-7 col-left">
+            <div class="item">
+              <img src="./img/conatct_inner.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-5 col-right">
+            <div class="item">
+              <h3>Find Your Course</h3>
+              <form>
+                <div class="form-info">
+                  <div class="contact-row first-row">
+                    <div class="contact-name">
+                      <span>
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Name" />
+                      </span>
+                    </div>
+                    <div class="contact-email">
+                      <span>
+                        <i class="fa fa-envelope"></i>
+                        <input type="text" placeholder="E-mail" />
+                      </span>
+                    </div>
+                  </div>
+                  <div class="contact-row">
+                    <div class="contact-nationality">
+                      <!-- <span> -->
+                      <i class="fa fa-graduation-cap"></i>
+                      <select>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="German">German</option>
+                      </select>
+                      <!-- </span> -->
+                    </div>
+                  </div>
+                  <div class="contact-row">
+                    <div class="contact-message">
+                      <span>
+                        <i class="fab fa-facebook-messenger"></i>
+                        <textarea placeholder="Message"></textarea>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="contact-button">
+                    <input type="submit" value="SEND" class="btnButton" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-footer col-lg-3 col-sm-6">
+            <div class="item-footer">
+              <h3>Contact us</h3>
+              <p>
+                <i class="fa fa-map-marker-alt"></i>
+                <span>Franklin St, Greenpoint Ave</span>
+              </p>
+              <p>
+                <i class="fa fa-phone"></i>
+                <span>+23 5446 67 </span>
+              </p>
+              <p>
+                <i class="fa fa-clock"></i>
+                <span>Monday - Friday: 8 AM - 5 PM</span>
+              </p>
+              <p class="social-footer">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="col-footer col-lg-3 col-sm-6">
+            <div class="item-footer">
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <div><a href="#">Home</a></div>
+                </li>
+                <li>
+                  <div>
+                    <a href="#">Courses</a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="#">Schedule</a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="#">Blog</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-footer col-lg-3 col-sm-6">
+            <div class="item-footer">
+              <h3>About</h3>
+              <ul>
+                <li>
+                  <div>
+                    <a href="#">About us</a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="#">Events</a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="#">Get Quote</a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="#">Contact</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-footer col-lg-3 col-sm-6">
+            <div class="item-footer">
+              <h3>Newsletter</h3>
+              <form>
+                <input
+                  class="email-footer"
+                  type="email"
+                  placeholder="Your email"
+                />
+                <input class="btnButton" type="submit" value="SUBSCRIBE" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./js/modellers/teacher.js"></script>
+    <script src="./js/services/service.js"></script>
+    <script src="./js/controller/main.js"></script>
+  </body>
+</html>

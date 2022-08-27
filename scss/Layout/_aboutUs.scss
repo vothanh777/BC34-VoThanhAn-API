@@ -1,0 +1,46 @@
+.aboutUs{
+    .wrapper{
+        padding-top: 80px;
+        background-image: url(../../img/yellow_top_wave_01.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+
+        .innerWrapper{
+            background-image: url(../../img/Violet_top_left_wave.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+
+             .title{
+                display: flex;
+                flex-direction: column;
+                // justify-content: center;
+                // align-items: center;
+                align-self: center;
+
+                h3{
+                    @include text($color-3, $fs-2 + 0.1, 600);
+                    
+                }
+                h2{
+                    @include text($color-2, 3.8rem, 700);
+                    margin-bottom: 80px;
+                    @include respond-to('large'){
+                        @include text($color-2, 3.15rem, 700);
+                        margin-bottom: 60px;
+                    }
+                }
+             }
+             .img-Banner{
+                img{
+                    display: block;
+                    margin: 0;
+                    line-height: 0;
+                    max-width: 100%;
+                    height: auto;
+                }
+             }
+        }
+    }
+}
